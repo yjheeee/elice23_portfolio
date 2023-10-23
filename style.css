@@ -28,10 +28,13 @@ a{
     top: 0;
     width: 100%;
     height: 100px;
-    
-    
-    
+    position: relative;
 }
+
+.navigator > a:first-of-type {
+  position: absolute;
+}
+
 
 li{
     display: inline;
@@ -47,21 +50,21 @@ li{
 
 .nav-li{
     justify-content: center;
+    width: 100%;
 }
 
 
-.nav-menu{
-    font-family: Inter;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 574;
-    padding-left: 0;
-    list-style: none;
-    justify-content: center;
-    padding :0, 80px;
-    
+.nav-menu {
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  /* font-weight: 574; */
+  /* padding-left: 0; */
+  list-style: none;
+  justify-content: space-around;
+  padding: 0 80px;
+  display: flex;
 }
-
 
 
 .nav-menu :hover {
